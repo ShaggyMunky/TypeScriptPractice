@@ -8,7 +8,18 @@ let personTemplate: {
 
 const person = {
     name: "Harold",
-    age: 26
+    age: 26,
+    hobbies: ['Sports', 'Cooking']
 };
 
+//setting the kind of array with the type of which it consists
+let favoriteActivities: string[];
+favoriteActivities = ['Sports'];
+
 console.log(person.name);
+
+
+//by using type inference, additional linting support provided for current type
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase());
+}

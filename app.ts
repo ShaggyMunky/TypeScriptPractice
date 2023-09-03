@@ -5,8 +5,13 @@
 
 //literal types indicate what the exact value that can be held
 
+//type alias: type keyword is TS specific
+//used to reduce repeated union types
+//best used as a reusable declaration across project
+type Combinable = number | string;
+
 function combine(
-    input1: number | string,
+    input1: Combinable,
     input2: number | string,
     resultConversion: 'as-number' | 'as-text' /*literal type*/) {
     let result

@@ -1,0 +1,8 @@
+npm install -g typescript
+*recommended using 'sudo' for mac* 
+
+tsc - command 
+
+tsc using-ts.ts
+
+compiling generates new js file

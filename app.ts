@@ -51,6 +51,11 @@ const person = {
 let favoriteActivities: string[];
 favoriteActivities = ['Sports'];
 
+//any type is flexibe and does not throw warnings if types do not match
+//should not use unless you are completely unsure of which type will be used 
+let favoriteActivitiesAny: any;
+let favoriteActivitiesAnyArray: any[];
+
 console.log(person.name);
 
 

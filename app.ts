@@ -21,6 +21,24 @@ const personTuple: {
     roleBad: ['author', 2] //Type error thrown
 };
 
+//Enums allow user identifyable names associated to numbers
+//starts at base 0 index
+//can assign a number at the first item, and all subsequent increment from the assigned
+//also can assign different numbers to values not directly in order
+//not restricted to numbers and can use text
+enum Role { ADMIN, READ_ONLY, AUTHOR};
+enum RoleStep { ADMIN = 5, READ_ONLY, AUTHOR}; //reads 5, 6, 7
+enum RoleDefine { ADMIN = 5, READ_ONLY = 100, AUTHOR = 20}; //reads 5, 100, 20
+enum RoleString { ADMIN = 5, READ_ONLY, AUTHOR = "AUTHOR"}; //reads 5, 6, 'AUTHOR'
+
+const personEnum = {
+    name: "Harold",
+    age: 26,
+    hobbies: ['Sports', 'Cooking'],
+    role: Role.ADMIN
+};
+
+
 
 const person = {
     name: "Harold",
